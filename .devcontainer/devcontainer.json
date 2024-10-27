@@ -1,0 +1,17 @@
+// .devcontainer/devcontainer.json
+{
+  "name": "Vue3 Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "octref.vetur",
+    "dbaeumer.vscode-eslint"
+  ],
+  "postCreateCommand": "npm install",
+  "forwardPorts": [8080],
+  "remoteUser": "node"
+}
